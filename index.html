@@ -11,15 +11,23 @@
 <body>
     <p><b>Введите первое число:</b><br>
         <input type="number" id="number1"><br>
+        <!--Ввод первого числа -->
         <p>
-            <button id="plus">+</button>
-            <button id="minus">-</button>
-            <button id="мultiplication">x</button>
-            <button id="division">÷</button>
+            <button id="plus" onclick="operation='+'">+</button>
+            <button id="minus" onclick="operation='-'">-</button>
+            <button id="мultiplication" onclick="operation='*'">x</button>
+            <button id="division" onclick="operation='/'">÷</button>
         </p>
         <p><b>Введите второе число:</b><br>
-            <input type="number" id="number1">
+            <input type="number" id="number2"><br>
+            <!--Ввод второго числа -->
+            <script src="calculation.js"></script>
+            <!--Добавление JS скрипта из стороннего файла -->
+            <button onclick="calculation()">Расчет</button>
+            <!--Выполнение функции по нажатию -->
+            <p id="result"></p>
+            <!--Ввод результата -->
 </body>
-<script src="calculation.js"></script>
+
 
 </html>
