@@ -10,8 +10,8 @@
 
 <body>
     <p><b>Введите первое число:</b><br>
-        <input type="number" id="number1"><br>
         <!--Ввод первого числа -->
+        <input type="number" id="number1"><br>
         <p>
             <button id="plus" onclick="operation='+'">+</button>
             <button id="minus" onclick="operation='-'">-</button>
@@ -19,14 +19,15 @@
             <button id="division" onclick="operation='/'">÷</button>
         </p>
         <p><b>Введите второе число:</b><br>
-            <input type="number" id="number2"><br>
             <!--Ввод второго числа -->
-            <script src="calculation.js"></script>
+            <input type="number" id="number2"><br>
             <!--Добавление JS скрипта из стороннего файла -->
-            <button onclick="calculation()">Расчет</button>
+            <script src="calculation.js"></script>
             <!--Выполнение функции по нажатию -->
-            <p id="result"></p>
+            <button onclick="calculation()">Расчет</button>
             <!--Ввод результата -->
+            <p id="result"></p>
+
 </body>
 
 

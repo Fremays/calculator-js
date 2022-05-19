@@ -12,7 +12,11 @@ function calculation() {
             result = number1 - number2;
             break;
         case "/":
-            result = number1 / number2;
+            if (number2 = 0) {
+                result = "На ноль делить нельзя!"
+            } else {
+                result = number1 / number2;
+            }
             break;
         case "*":
             result = number1 * number2;
