@@ -1,9 +1,9 @@
 let operation
 
-function func() {
+function calculation() {
     let result
-    const number1 = Number((document.getElementById("number1").values))
-    const number2 = Number((document.getElementById("number2").values))
+    const number1 = Number((document.getElementById("number1").value))
+    const number2 = Number((document.getElementById("number2").value))
     switch (operation) {
         case "+":
             result = number1 + number2;
